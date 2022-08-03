@@ -396,7 +396,7 @@ hypre_ParCSRRelax_Cheby_Setup(hypre_ParCSRMatrix *A,         /* matrix to relax 
         optimalWeightsImpl(coefs + 2, order);
       }
       if(variant == 3){
-         for(HYPRE_Int i = 0; i < order; ++order){
+         for(HYPRE_Int i = 0; i < order; ++i){
             coefs[2 + i] = 1.0;
          }
       }
